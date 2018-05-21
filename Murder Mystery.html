@@ -1,0 +1,19 @@
+var room = "dining room";
+var suspect = "Mr. Parkes";
+
+var weapon = "";
+var solved = false;
+
+if (room === "dining room") {
+    weapon = "knife", solved = true, suspect === "Mr. Parkes";
+} else if (room === "ballroom") {
+    weapon = "poison", solved = true, suspect === "Mr. Kalehoff";
+} else if (room === "billiards room") {
+    weapon = "pool stick", solved = true, suspect === "Mrs. Sparr";
+} else {
+    weapon = "trophy", solved = true, suspect === "Ms. Van Cleve";
+}
+
+if (solved) {
+	console.log(suspect + " did it in the " + room + " with the " + weapon+ "!");
+}	

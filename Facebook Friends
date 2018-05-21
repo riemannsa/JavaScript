@@ -1,0 +1,17 @@
+var facebookProfile={
+name: "ManSha Li",
+friends: 100,
+messages: ["cats","music"],
+postMessage: function(message) {
+facebookProfile.messages.push(message);
+},
+deleteMessage(index) {
+facebookProfile.messages.splice(index,1);
+},
+addFriend: function() {
+facebookProfile.friends++;
+},
+removeFriend: function() {
+facebookProfile.friends--;
+},
+};
